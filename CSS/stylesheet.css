@@ -1,15 +1,44 @@
 * {
     box-sizing: border-box;
 }
-body{
+
+body {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0;
 }
-.hero-banner{
+
+.hero-banner {
+    height: 693px;
     max-width: 1440px;
-    border: 1px solid green;
-}
-.hero-image{
     background-image: url(/uploads/images/herobanner.jpg);
-    size: 25%;
+    background-size: cover;
+}
+
+/* .hero-image {
+    height: fit-content;
+    width: 100%;
+}
+ */
+.navigation {
+    height: 48px;
+    width: 100%;
+    background-color: black;
+}
+
+.main-content {
+    border: 2px solid black;
+    margin-top: 20px;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px
+}
+
+.blog-posts {
+    width: 315px;
+    height: 220px;
+    border: 2px solid green;
+    margin: auto;
 }
