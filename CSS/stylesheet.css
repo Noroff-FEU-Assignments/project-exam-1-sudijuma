@@ -38,7 +38,30 @@ body {
 
 .blog-posts {
     width: 315px;
-    height: 220px;
+    height: 260px;
     border: 2px solid green;
     margin: auto;
+}
+
+.blog-posts-image-container {
+    max-width: 315px;
+    max-height: 220px;
+    /*     background-image: url(/uploads/images/satellite.jpg);
+    background-size: cover; */
+}
+
+.blog-post-title {
+    width: fit-content;
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+    height: 28px;
+    padding: 4px;
+    background-color: #24a419;
+    color: white;
+    border-radius: 5px;
+}
+
+.post-date{
+    margin: 0;
 }
