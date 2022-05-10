@@ -31,8 +31,10 @@ body {
     margin-top: 20px;
     max-width: 1220px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+/*     display: grid;
+    grid-template-columns: repeat(3, 1fr); */
     gap: 5px
 }
 
@@ -45,7 +47,7 @@ body {
 
 .blog-posts-image-container {
     max-width: 315px;
-    max-height: 220px;
+    /* max-height: 220px; */
     /*     background-image: url(/uploads/images/satellite.jpg);
     background-size: cover; */
 }
