@@ -1,39 +1,39 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .sticky-header {
-    max-width: 1440px;
-    height: 48px;
-    background-color: green;
-    border: 1px solid black;
-    position: sticky;
+  max-width: 1440px;
+  height: 48px;
+  background-color: green;
+  border: 1px solid black;
+  position: sticky;
 }
 
 .sticky-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-banner {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: pink;
-    height: 250px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: pink;
+  height: 250px;
 }
 
 .headline-container {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 .featured-text-container {
-    margin-left: 24px;
+  margin-left: 24px;
 }
