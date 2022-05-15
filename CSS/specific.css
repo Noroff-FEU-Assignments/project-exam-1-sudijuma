@@ -34,6 +34,22 @@ body {
   margin-left: 24px;
 }
 
+.featured-post {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 64px;
+}
+
 .featured-text-container {
   margin-left: 24px;
+}
+
+.featured-post-container {
+  height: 300px;
+  width: 450px;
+  border: 2px solid black;
+  border-radius: 5px;
+  filter: drop-shadow(0.5rem 0.5rem 1rem #FF0000);
 }
