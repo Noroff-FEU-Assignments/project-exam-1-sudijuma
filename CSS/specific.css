@@ -75,6 +75,20 @@ body {
 }
 
 .main-content {
-  display: grid;
-  grid-template-columns: 4;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.flexbox-container {
+  width:fit-content;
+}
+
+.post-container {
+  width: 250px;
+  height: 300px;
+  margin: 24px;
+  border: 2px solid black;
 }
