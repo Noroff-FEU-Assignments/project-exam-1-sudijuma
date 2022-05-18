@@ -24,14 +24,19 @@ body {
 
 .hero-banner {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-image: url(/uploads/images/rob-warner-wA-kp2Ad-To-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 250px;
 }
 
 .headline-container {
-  margin-left: 24px;
+  color: white;
+  font-size: 1.5rem;
+
 }
 
 .featured-post {
@@ -40,15 +45,15 @@ body {
   gap: 32px;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 5vh;
 }
 
 .featured-text-container {
-  margin-left: 24px;
+  font-size: 1.5rem;
 }
 
 .featured-post-container {
-  flex-basis: 40%;
+  flex-basis: 33%;
   border: 2px solid black;
   border-radius: 5px;
 }
