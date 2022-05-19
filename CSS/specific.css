@@ -12,8 +12,7 @@ body {
 .sticky-header {
   max-width: 1440px;
   height: 48px;
-  background-color: green;
-  border: 1px solid black;
+  background-color: black;
   position: sticky;
 }
 
@@ -23,11 +22,25 @@ body {
   justify-content: center;
 }
 
+.logo {
+  color: white;
+}
+.sticky-navigation {
+  color: white;
+  justify-self: space-between;
+}
+
+.header-navigation {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
 .hero-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/uploads/images/rob-warner-wA-kp2Ad-To-unsplash.jpg);
+  background-image: url(/uploads/images/herobanner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,9 +48,17 @@ body {
 }
 
 .headline-container {
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  padding: 8px;
+  border-radius: 10px;
   color: white;
   font-size: 1.5rem;
+}
 
+h1 {
+  margin: 0 auto;
 }
 
 .featured-post {
@@ -121,7 +142,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: fit-content;
-  height:fit-content;
+  height: fit-content;
   border: 1px solid black;
 }
 
