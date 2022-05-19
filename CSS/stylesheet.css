@@ -2,108 +2,154 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: verdana, sans-serif;
+}
+
 body {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
+    background-image: url(/uploads/images/background/full-bloom.png);
+    background-size: 10%;
+}
+
+.header {
+    max-width: 1440px;
+    height: 48px;
+    background-color: black;
+    position: sticky;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.link-container {
+    width: fit-content;
+}
+
+.header-navigation {
+    text-decoration: none;
+    color: white;
 }
 
 .hero-banner {
-    height: 693px;
-    max-width: 1440px;
-    background-image: url(/uploads/images/herobanner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* .hero-image {
-    height: fit-content;
-    width: 100%;
-}
- */
-.navigation {
-    height: 48px;
-    width: 100%;
-    background-color: black;
-}
-
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: center;
-    max-width: 1220px;
-    margin: 48px auto;
-    gap: 48px;
-}
-
-.post-container {
-    width: 315px;
-    height: 260px;
-}
-
-.blog-posts {
-    flex-grow: 1;
-    flex-basis: 0;
-    min-width: 33.33%;
-    height: 250px;
-    background-position: center;
-    background-image: url(/uploads/images/satellite.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* .date-container {
-    margin-top: 200px;
-}
-
-.btn-container {
-    margin-right: 20px;
-} */
-
-.blog-posts-image-container {
-    margin: 0 auto;
-    max-width: 100%;
-    height: 220px;
-}
-
-.blog-post-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(/uploads/images/herobanner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.headline-container {
+    width: fit-content;
     height: fit-content;
-    width: fit-content;
-    padding: 4px;
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
     color: white;
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+.featured-post {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.featured-text-container {
+    font-size: 1.5rem;
+}
+
+.featured-post-container {
+    flex-basis: 33%;
+    border: 2px solid black;
     border-radius: 5px;
 }
 
-.blog-post-title>div {
-    padding: 5px 10px;
-    background: black;
-    color: white;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+.featured-post-image-container {
+    width: 448px;
+    height: 280px;
+    border-bottom: 1px solid black;
 }
 
-.read-more {
+.featured-post-headline {
+    margin: 8px;
+}
+
+.featured-post-short-description {
+    margin: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.main-content {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.flexbox-container {
     width: fit-content;
-    /*     align-self: end;
-    margin-right: 8px;
-    margin-top: 8px; */
 }
 
-@media(max-width:1000px) {
-    .blog-posts {
-        min-width: 50%;
-    }
+.post-container {
+    width: 250px;
+    height: 300px;
+    margin: 24px;
+    border: 2px solid black;
 }
 
-@media(max-width:800px) {
-    .blog-posts {
-        min-width: 100%;
-    }
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.navigation-column-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.newletter-container {
+    display: flex;
+    border: 2px solid black;
+}
+
+.newsletter-form {
+    width: 250px;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+.iconify {
+    font-size: 2rem;
 }
