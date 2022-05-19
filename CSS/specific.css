@@ -5,7 +5,8 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0;
+  background-image: url(/uploads/images/background/full-bloom.png);
+  background-size: 10%;
 }
 
 .sticky-header {
@@ -83,7 +84,7 @@ body {
 }
 
 .flexbox-container {
-  width:fit-content;
+  width: fit-content;
 }
 
 .post-container {
@@ -91,4 +92,39 @@ body {
   height: 300px;
   margin: 24px;
   border: 2px solid black;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.navigation-column-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+
+.newletter-container {
+  display: flex;
+  border: 2px solid black;
+}
+
+.newsletter-form {
+  width: 250px;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: fit-content;
+  height:fit-content;
+  border: 1px solid black;
+}
+
+.iconify {
+  font-size: 2rem;
 }
