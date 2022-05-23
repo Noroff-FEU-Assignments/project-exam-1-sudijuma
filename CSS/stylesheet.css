@@ -90,6 +90,11 @@ h1 {
     border-bottom: 1px solid black;
 }
 
+.featured-image{
+    width: 100%;
+    height: fit-content;
+}
+
 .featured-post-headline {
     margin: 8px;
 }
