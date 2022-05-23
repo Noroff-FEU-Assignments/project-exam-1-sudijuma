@@ -10,8 +10,7 @@ async function displayPosts() {
       <div class="featured-post-image-container"><img src="${productResponse[i].guid.rendered}" alt="" class="featured-image"></div>
       <h3 class="featured-post-headline">${productResponse[i].title.rendered}</h3>
       <p class="featured-post-short-description">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />Quas,
-        dolorum?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       </p>
     </div>`;
     }
