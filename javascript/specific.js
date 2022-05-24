@@ -10,7 +10,7 @@ async function displayPosts() {
     try {
         const postsCall = await fetch(API_URL);
         const postsResult = await postsCall.json();
-        postContainer.innerHTML = `${postsResult.content.rendered}`
+        postContainer.innerHTML = `${postsResult.content.rendered}`;
     } catch (err) {
         console.log(err)
     }

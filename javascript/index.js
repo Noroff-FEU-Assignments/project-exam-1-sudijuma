@@ -6,7 +6,7 @@ async function displayPosts() {
     const productResponse = await productCall.json();
     for (let i = 0; i < productResponse.length; i++) {
       productDisplay.innerHTML += `      <div class="featured-post-container">
-      <div class="featured-post-image-container"><img src="${productResponse[i].id.featured_media.href}" alt="" srcset="${productResponse[i].srcset}" class="featured-image"></div>
+      <div class="featured-post-image-container"><img src="${productResponse[i].source_url}" alt="" srcset="${productResponse[i].srcset}" class="featured-image"></div>
       <h3 class="featured-post-headline">${productResponse[i].title.rendered}</h3>
       <a href="/specific.html?id=${productResponse[i].id}">View details</a>
     </div>`;
