@@ -1,12 +1,13 @@
-const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/`;
+const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
 const productDisplay = document.querySelector(".featured-post");
 async function displayPosts() {
   try {
     const productCall = await fetch(API_URL);
     const productResponse = await productCall.json();
+    console.log(productResponse);
     for (let i = 0; i < productResponse.length; i++) {
       productDisplay.innerHTML += `      <div class="featured-post-container">
-      <div class="featured-post-image-container"><img src="${productResponse[i].source_url}" alt="" srcset="${productResponse[i].srcset}" class="featured-image"></div>
+      <div class="featured-post-image-container"><img src="${productResponse[i].id.featured_image}" alt="" srcset="" class="featured-image"></div>
       <h3 class="featured-post-headline">${productResponse[i].title.rendered}</h3>
       <a href="/specific.html?id=${productResponse[i].id}">View details</a>
     </div>`;
