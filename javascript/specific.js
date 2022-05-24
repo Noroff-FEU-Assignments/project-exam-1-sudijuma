@@ -10,7 +10,8 @@ async function displayPosts() {
     try {
         const postsCall = await fetch(API_URL);
         const postsResult = await postsCall.json();
-        postContainer.innerHTML = `${postsResult.content.rendered}`;
+        postContainer.innerHTML = `${postsResult.content.rendered}
+        <span>Posted: ${postsResult.date}</span>`;
     } catch (err) {
         console.log(err)
     }
@@ -28,9 +29,8 @@ async function displayOtherPosts() {
             return;
         }
       postDisplay.innerHTML += `
-      <h3 class="recomended">Other blog posts to read</h3>
+      <span class="recomended-categories"><p>${productResponse[i].categories}</p></span>
       <a href="/specific.html?id=${productResponse[i].id}">${productResponse[i].title.rendered}</a>
-      </div>
       `;
     }
   } catch (e) {
