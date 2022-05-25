@@ -20,7 +20,7 @@ displayPosts(); */
 
 
 const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
-const productDisplay = document.querySelector(".featured-post");
+const productDisplay = document.querySelector(".blog-post-container");
 
 fetch(API_URL)
   .then(response => {
@@ -33,9 +33,9 @@ fetch(API_URL)
       const postTitle = apiResult[i].title.rendered;
       const postID = apiResult[i].id;
       const postImg = apiResult[i]._embedded['wp:featuredmedia'][0].source_url;
-      productDisplay.innerHTML += `<div class="featured-post-container">
-      <div class="featured-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
-      <h3 class="featured-post-headline">${postTitle}</h3>
+      productDisplay.innerHTML += `<div class="blog-posts">
+      <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
+      <h3 class="blog-post-headline">${postTitle}</h3>
       <a href="/specific.html?id=${postID}">View details</a>
     </div>`
     }
