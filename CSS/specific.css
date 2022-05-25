@@ -75,11 +75,22 @@ h1 {
 .recomended-posts-container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-
+  justify-content: space-between;
 }
 
-.recomended-posts {
+.recomended-post-image-container {
+  height: 150px;
+  width: 150px;
+}
+
+.recomended-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* .recomended-posts {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -88,7 +99,7 @@ h1 {
   border: 2px solid black;
   background-image: url(/uploads/astro_inspace.jpg);
   background-size: cover;
-}
+} */
 
 .recomended-headline {
   background-color: white;

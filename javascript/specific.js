@@ -7,16 +7,16 @@ console.log(postID);
 const postContainer = document.querySelector(".specific-post");
 
 async function displayPosts() {
-    try {
-        const postsCall = await fetch(API_URL);
-        const postsResult = await postsCall.json();
-        postContainer.innerHTML = `
+  try {
+    const postsCall = await fetch(API_URL);
+    const postsResult = await postsCall.json();
+    postContainer.innerHTML = `
         <h1>${postsResult.title.rendered}</h1>
         ${postsResult.content.rendered}
         <span class="post-date">Posted: ${postsResult.date}</span>`;
-    } catch (err) {
-        console.log(err)
-    }
+  } catch (err) {
+    console.log(err)
+  }
 }
 displayPosts();
 
@@ -27,14 +27,14 @@ async function displayOtherPosts() {
     const productCall = await fetch(otherApiCall);
     const productResponse = await productCall.json();
     for (let i = 0; i < productResponse.length; i++) {
-        if(i > 3){
-            return;
-        }
+      if (i > 3) {
+        return;
+      }
       postDisplay.innerHTML += `
-      <div class="recomended-post-image-container"><img src="${productResponse[i]._embedded['wp:featuredmedia'][0].source_url}" alt="" srcset="" class="featured-image" />
-      <span class="recomended-categories"><p>${productResponse[i].categories}</p></span>
-      <a href="/specific.html?id=${productResponse[i].id}">${productResponse[i].title.rendered}</a>
-      `;
+      <div class="recomended-post-container">
+      <div class="recomended-post-image-container"><img src="${productResponse[i]._embedded['wp:featuredmedia'][0].source_url}" alt="" srcset="" class="recomended-image" />
+      <a href="/specific.html?id=${productResponse[i].id}" class="link-container">${productResponse[i].title.rendered}</a>
+      </div>`;
     }
   } catch (e) {
     console.log(e);
