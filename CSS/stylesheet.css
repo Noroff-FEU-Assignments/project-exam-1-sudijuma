@@ -90,7 +90,9 @@ h3 {
   height: 280px;
   border-bottom: 1px solid black;
 }
-
+.blog-info-container {
+  justify-content: center;
+}
 .featured-image {
   border: 1px solid black;
   height: 280px;

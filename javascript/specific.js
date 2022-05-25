@@ -20,7 +20,7 @@ async function displayPosts() {
 }
 displayPosts();
 
-const otherApiCall = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/`;
+const otherApiCall = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
 const postDisplay = document.querySelector(".recomended-posts-container");
 async function displayOtherPosts() {
   try {
@@ -31,6 +31,7 @@ async function displayOtherPosts() {
             return;
         }
       postDisplay.innerHTML += `
+      <div class="recomended-post-image-container"><img src="${productResponse[i]._embedded['wp:featuredmedia'][0].source_url}" alt="" srcset="" class="featured-image" />
       <span class="recomended-categories"><p>${productResponse[i].categories}</p></span>
       <a href="/specific.html?id=${productResponse[i].id}">${productResponse[i].title.rendered}</a>
       `;
