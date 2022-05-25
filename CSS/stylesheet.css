@@ -71,7 +71,8 @@ h3 {
 
 .featured-post {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: left;
     gap: 32px;
     justify-content: center;
     align-items: center;

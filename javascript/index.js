@@ -1,4 +1,4 @@
-const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
+/* const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
 const productDisplay = document.querySelector(".featured-post");
 async function displayPosts() {
   try {
@@ -16,8 +16,31 @@ async function displayPosts() {
     console.log(e);
   }
 }
-displayPosts();
+displayPosts(); */
 
+
+const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
+const productDisplay = document.querySelector(".featured-post");
+
+fetch(API_URL)
+  .then(response => {
+    return response.json();
+  })
+  .then((jasonData) => {
+    const apiResult = jasonData;
+    console.log(apiResult);
+    for (let i = 0; i < apiResult.length; i++) {
+      const postTitle = apiResult[i].title.rendered;
+      const postID = apiResult[i].id;
+      const postImg = apiResult[i]._embedded['wp:featuredmedia'][0].source_url;
+      productDisplay.innerHTML += `<div class="featured-post-container">
+      <div class="featured-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
+      <h3 class="featured-post-headline">${postTitle}</h3>
+      <a href="/specific.html?id=${postID}">View details</a>
+    </div>`
+    }
+  })
+  .catch((error) => console.log(error))
 
 /* 
 //1. select the input with id firstName
