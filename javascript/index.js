@@ -7,7 +7,7 @@ async function displayPosts() {
     console.log(productResponse);
     for (let i = 0; i < productResponse.length; i++) {
       productDisplay.innerHTML += `      <div class="featured-post-container">
-      <div class="featured-post-image-container"><img src="${productResponse[i].id.featured_image}" alt="" srcset="" class="featured-image"></div>
+      <div class="featured-post-image-container"><img src="" alt="" srcset="" class="featured-image"></div>
       <h3 class="featured-post-headline">${productResponse[i].title.rendered}</h3>
       <a href="/specific.html?id=${productResponse[i].id}">View details</a>
     </div>`;
@@ -17,6 +17,7 @@ async function displayPosts() {
   }
 }
 displayPosts();
+
 
 /* 
 //1. select the input with id firstName
