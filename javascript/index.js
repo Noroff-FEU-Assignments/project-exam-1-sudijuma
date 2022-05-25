@@ -33,10 +33,12 @@ fetch(API_URL)
       const postTitle = apiResult[i].title.rendered;
       const postID = apiResult[i].id;
       const postImg = apiResult[i]._embedded['wp:featuredmedia'][0].source_url;
+      const postExcerpt = apiResult[i].excerpt.rendered;
       productDisplay.innerHTML += `<div class="blog-posts">
       <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
-      <h3 class="blog-post-headline">${postTitle}</h3>
+      <div class="blog-info-container"><h3 class="blog-post-headline">${postTitle}</h3><p>${postExcerpt}</p>
       <a href="/specific.html?id=${postID}">View details</a>
+      </div>
     </div>`
     }
   })
