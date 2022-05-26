@@ -31,13 +31,16 @@ fetch(API_URL)
     for (let i = 0; i < apiResult.length; i++) {
       const postTitle = apiResult[i].title.rendered;
       const postID = apiResult[i].id;
+      const postDate = apiResult[i].date;
       const postImg = apiResult[i]._embedded["wp:featuredmedia"][0].source_url;
       productDisplay.innerHTML += `<div class="blog-posts">
       <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
-      <div class="blog-info-container"><h2 class="blog-post-headline">${postTitle}</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+      <div class="blog-info-container"><h2 class="blog-post-headline">${postTitle}</h2>
+      <span class="post-date">${postDate.date}</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
       voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing
       elit. Vitae, voluptatum.</p>
-      <a href="/specific.html?id=${postID}">View details</a>
+      <div class="read-more-container"><a href="/specific.html?id=${postID}" class="read-more-link">Read more...</a></div>
       </div>
     </div>`;
     }

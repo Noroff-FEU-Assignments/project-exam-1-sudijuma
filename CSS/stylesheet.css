@@ -61,7 +61,7 @@ a:hover {
   font-size: 1.5rem;
 }
 
-.second-headline-container{
+.second-headline-container {
   display: flex;
   justify-content: center;
   margin-top: 64px;
@@ -82,7 +82,7 @@ h3 {
 
 .blog-post-text-container {
   font-size: 1.5rem;
-  justify-content:center;
+  justify-content: center;
 }
 
 .blog-posts {
@@ -103,9 +103,26 @@ h3 {
 .blog-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: top;
   margin-left: 16px;
   padding: 24px;
+}
+
+.read-more-link {
+  text-decoration: none;
+  color: white;
+}
+
+.read-more-container {
+  display: flex;
+  width: 140px;
+  height: 50px;
+  background-color: black;
+  border-right: 1px solid hotpink;
+  border-bottom: 2px solid hotpink;
+  padding: 8px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .featured-image {
