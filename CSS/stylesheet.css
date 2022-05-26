@@ -91,7 +91,10 @@ h3 {
   border-bottom: 1px solid black;
 }
 .blog-info-container {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  margin-left: 3vw;
 }
 .featured-image {
   border: 1px solid black;

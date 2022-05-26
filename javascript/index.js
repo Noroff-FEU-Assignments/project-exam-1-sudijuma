@@ -18,12 +18,11 @@ async function displayPosts() {
 }
 displayPosts(); */
 
-
 const API_URL = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
 const productDisplay = document.querySelector(".blog-post-container");
 
 fetch(API_URL)
-  .then(response => {
+  .then((response) => {
     return response.json();
   })
   .then((jasonData) => {
@@ -32,17 +31,18 @@ fetch(API_URL)
     for (let i = 0; i < apiResult.length; i++) {
       const postTitle = apiResult[i].title.rendered;
       const postID = apiResult[i].id;
-      const postImg = apiResult[i]._embedded['wp:featuredmedia'][0].source_url;
-      const postExcerpt = apiResult[i].excerpt.rendered;
+      const postImg = apiResult[i]._embedded["wp:featuredmedia"][0].source_url;
       productDisplay.innerHTML += `<div class="blog-posts">
       <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
-      <div class="blog-info-container"><h3 class="blog-post-headline">${postTitle}</h3><p>${postExcerpt}</p>
+      <div class="blog-info-container"><h2 class="blog-post-headline">${postTitle}</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+      voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Vitae, voluptatum.</p>
       <a href="/specific.html?id=${postID}">View details</a>
       </div>
-    </div>`
+    </div>`;
     }
   })
-  .catch((error) => console.log(error))
+  .catch((error) => console.log(error));
 
 /* 
 //1. select the input with id firstName
