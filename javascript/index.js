@@ -34,7 +34,7 @@ fetch(API_URL)
       const postDate = apiResult[i].date;
       const postImg = apiResult[i]._embedded["wp:featuredmedia"][0].source_url;
       productDisplay.innerHTML += `<div class="blog-posts">
-      <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="featured-image"></div>
+      <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="blog-image"></div>
       <div class="blog-info-container"><h2 class="blog-post-headline">${postTitle}</h2>
       <span class="post-date">${postDate.date}</span>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
@@ -46,6 +46,31 @@ fetch(API_URL)
     }
   })
   .catch((error) => console.log(error));
+
+
+/* const otherApiCall = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
+const postDisplay = document.querySelector(".sidebar-container");
+async function displayOtherPosts() {
+  try {
+    const productCall = await fetch(otherApiCall);
+    const productResponse = await productCall.json();
+    for (let i = 0; i < productResponse.length; i++) {
+      if (i > 3) {
+        return;
+      }
+      postDisplay.innerHTML += `
+      <div class="sidebar-container">
+      <div class="sidebar-content">
+      <div class="sidebar-image-container"><img src="${productResponse[i]._embedded['wp:featuredmedia'][0].source_url}" alt="" srcset="" class="sidebar-image" />
+      <a href="/specific.html?id=${productResponse[i].id}" class="link-container">${productResponse[i].title.rendered}</a>
+      </div>
+      </div>`;
+    }
+  } catch (e) {
+    console.log(e);
+  }
+}
+displayOtherPosts() */
 
 
 /* 
