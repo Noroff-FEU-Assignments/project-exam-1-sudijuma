@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: verdana, sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(/uploads/images/background/full-bloom.png);
+    background-size: 10%;
+}
+
+.header {
+    max-width: 1440px;
+    height: 48px;
+    background-color: black;
+    position: sticky;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.link-container {
+    width: fit-content;
+}
+
+.header-navigation {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/uploads/images/herobanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.headline-container {
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+}

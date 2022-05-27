@@ -47,6 +47,7 @@ fetch(API_URL)
   })
   .catch((error) => console.log(error));
 
+
 /* 
 //1. select the input with id firstName
 

@@ -32,8 +32,10 @@ async function displayOtherPosts() {
       }
       postDisplay.innerHTML += `
       <div class="recomended-post-container">
+      <div class="recomended-posts">
       <div class="recomended-post-image-container"><img src="${productResponse[i]._embedded['wp:featuredmedia'][0].source_url}" alt="" srcset="" class="recomended-image" />
       <a href="/specific.html?id=${productResponse[i].id}" class="link-container">${productResponse[i].title.rendered}</a>
+      </div>
       </div>`;
     }
   } catch (e) {

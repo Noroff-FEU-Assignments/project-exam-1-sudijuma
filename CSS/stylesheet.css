@@ -75,10 +75,11 @@ h3 {
   font-size: 1rem;
 }
 
-/* .blog-post-container {
+.blog-post-container {
   display: grid;
   margin-top: 5vh;
-} */
+  justify-content: left;
+}
 
 .blog-post-text-container {
   font-size: 1.5rem;
@@ -87,7 +88,7 @@ h3 {
 
 .blog-posts {
   display: flex;
-  max-width: 1200px;
+  max-width: 900px;
   border-bottom: 2px solid black;
   border-radius: 5px;
   margin: 0 auto;
@@ -98,6 +99,7 @@ h3 {
 .blog-post-image-container {
   width: 550px;
   height: 350px;
+  display: block;
 }
 
 .blog-info-container {
