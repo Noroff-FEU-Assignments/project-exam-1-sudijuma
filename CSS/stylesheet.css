@@ -9,15 +9,15 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url(/uploads/images/background/full-bloom.png);
-  background-size: 10%;
+  background-color: black;
+  /*   background-image: url(/uploads/images/background/full-bloom.png);
+  background-size: 10%; */
 }
 
 .header {
   max-width: 1440px;
   height: 48px;
   background-color: black;
-  position: sticky;
 }
 
 .header {
@@ -48,7 +48,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 750px;
 }
 
 .headline-container {
@@ -88,7 +88,7 @@ h3 {
 }
 
 .blog-posts {
-  flex-basis: auto;
+  flex-basis: 33%;
   border-bottom: 2px solid black;
   border-radius: 5px;
   margin: 0 auto;
@@ -102,8 +102,10 @@ h3 {
 }
 
 .blog-post-image-container {
-  max-height: 350px;
+  width: 100%;
+  height: 550px;
   object-fit: cover;
+  border-bottom: 2px solid hotpink;
 }
 
 .blog-image {
@@ -113,7 +115,6 @@ h3 {
 }
 
 .blog-info-container {
-  margin-left: 16px;
   padding: 24px;
 }
 
@@ -142,22 +143,25 @@ h3 {
 }
 
 .main-content {
-  margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url(/uploads/images/background/5-dots.png);
+  background-size: 30%;
+  margin-top: 150px;
   gap: 1.5rem;
 }
 
 .flexbox-container {
   width: fit-content;
+  border: 2px solid lightgray;
 }
 
 .post-container {
   width: 250px;
   height: 300px;
   margin: 24px;
-  border: 2px solid black;
+  border: 1px solid white;
 }
 
 .footer {
