@@ -30,7 +30,7 @@ function staffPicker() {
         </div>
         <button class="prev">Previous</button>
         <button class="next">Next</button>`
-        crew.append(staffList);        
+        crew.append(staffList);
     }
 }
 staffPicker();

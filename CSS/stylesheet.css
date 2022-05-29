@@ -77,7 +77,8 @@ h3 {
 
 .blog-post-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
   margin-top: 64px;
   /* justify-content: left; */
 }
@@ -128,7 +129,6 @@ h3 {
   width: fit-content;
   height: fit-content;
   background-color: black;
-  gap: 2px;
   border-right: 1px solid hotpink;
   border-bottom: 2px solid hotpink;
   padding: 8px;
