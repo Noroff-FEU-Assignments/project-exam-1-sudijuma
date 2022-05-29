@@ -29,17 +29,19 @@ fetch(API_URL)
     const apiResult = jasonData;
     console.log(apiResult);
     for (let i = 0; i < apiResult.length; i++) {
+      if (i === 3) {
+        brake;
+      }
       const postTitle = apiResult[i].title.rendered;
       const postID = apiResult[i].id;
       const postDate = apiResult[i].date;
       const postImg = apiResult[i]._embedded["wp:featuredmedia"][0].source_url;
-      productDisplay.innerHTML += `<div class="blog-posts">
-      <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="blog-post-image-container"></div>
-      <div class="blog-info-container"><h2 class="blog-post-headline">${postTitle}</h2>
-      <span class="post-date">${postDate.date}</span>
-      <div class="read-more-container"><a href="/specific.html?id=${postID}" class="read-more-link">Read more...</a></div>
-      </div>
-    </div>`;
+      productDisplay.innerHTML += `
+      <div class="blog-posts">
+        <div class="blog-post-image-container"><img src="${postImg}" alt="" srcset="" class="blog-post-image-container"></div>
+        <div class="blog-info-container"><h2 class="blog-post-headline">${postTitle}</h2></div>
+        <div class="read-more-container"><a href="/specific.html?id=${postID}" class="read-more-link">Read more...</a></div>
+      </div>`;
     }
   })
   .catch((error) => console.log(error));

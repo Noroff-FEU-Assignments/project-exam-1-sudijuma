@@ -128,12 +128,11 @@ h3 {
   width: fit-content;
   height: fit-content;
   background-color: black;
+  gap: 2px;
   border-right: 1px solid hotpink;
   border-bottom: 2px solid hotpink;
   padding: 8px;
   border-radius: 5px;
-  justify-content: center;
-  align-items: center;
 }
 
 .btn-container {
@@ -152,7 +151,7 @@ h3 {
   gap: 1.5rem;
 }
 
-.flexbox-container {
+.featured-post-container {
   width: fit-content;
   border: 2px solid lightgray;
 }

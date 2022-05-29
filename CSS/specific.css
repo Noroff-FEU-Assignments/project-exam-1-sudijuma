@@ -15,8 +15,9 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url(/uploads/images/background/full-bloom.png);
-  background-size: 10%;
+  background-color: white;
+/*   background-image: url(/uploads/images/background/full-bloom.png);
+  background-size: 10%; */
 }
 
 .header {
@@ -61,7 +62,7 @@ a:hover {
 
 h1 {
   font-size: 2rem;
-  margin: auto;
+  margin: 24px auto;
   padding: 0.5rem 0.5rem 0.5rem;
 }
 
@@ -78,12 +79,21 @@ h1 {
   max-width: 1080px;
 }
 
+.wp-image-50 {
+  width: 100%;
+}
+
 .specific-post {
   display: flex;
   flex-direction: column;
   max-width: 900px;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.specific-post > p {
+  line-height: 1.5rem;
+  margin-top: 24px;
 }
 
 .post-date {
