@@ -33,3 +33,61 @@ function myFunction() {
         x.className = 'topnav';
     }
 }
+
+
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+/* button.onclick = function () {
+    const valid = input.value;
+    const validation
+} */
+messageContainer.onkeyup = function (event) {
+    const messageLength = event.target.value.length;
+    wordCount.innerHTML = messageLength;
+    if (formSubmitBTN.Disabled = messageLength <= 9) {
+    } else {
+        alert("message must be at least 10 characters")
+    }
+}
+
+
+function adressValidation(adressToCheck) {
+    if (adressToCheck <= 24) {
+        alert('Please enter valid address');
+        return false;
+    } else {
+        return true;
+    }
+}
+function subjectValidation(subject) {
+    if (subject <= 9) {
+        alert('Input must be at least 10 characters long');
+        return false;
+    } else {
+        return true;
+    }
+}
+function nameValidation(FandLname) {
+    if (FandLname == '') {
+        alert('Name required');
+        return false;
+    } else {
+        return true;
+    }
+}
+function emailValidation(email) {
+    var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.value.match(mailFormat)) {
+        alert('valid email adress!');
+        return true;
+    } else {
+        alert('invalid email');
+        return false;
+    }
+}
+
