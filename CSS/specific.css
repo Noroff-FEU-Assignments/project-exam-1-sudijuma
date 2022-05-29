@@ -147,19 +147,19 @@ h1 {
   max-width: 1080px;
 }
 
-.wp-image-50 {
-  width: 100%;
+.wp-block-image {
+  object-fit: contain;
 }
 
 .specific-post {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  border: 2px solid black;
   border-radius: 5px;
+  overflow: hidden;
 }
 
-.specific-post>p {
+.specific-post > p {
   line-height: 1.5rem;
   margin-top: 24px;
 }
@@ -191,7 +191,6 @@ h1 {
   object-fit: cover;
 }
 
-
 /* .recomended-posts {
   display: flex;
   justify-content: center;
@@ -209,7 +208,7 @@ h1 {
   height: fit-content;
   padding: 4px;
   border-radius: 5px;
-  background-color: #24A419;
+  background-color: #24a419;
   color: white;
   font-weight: bold;
 }
