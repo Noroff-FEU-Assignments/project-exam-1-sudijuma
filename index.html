@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/CSS/stylesheet.css" />
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="/javascript/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <section class="hero-banner">
@@ -15,23 +19,16 @@
         <h1>Welcome To My Space</h1>
       </div>
     </section>
-        <header class="header">
-      <div class="link-container">
-        <a href="./" class="header-navigation">Home</a>
-      </div>
-      <div class="link-container">
-        <a href="/about_page.html" class="header-navigation">About Space</a>
-      </div>
-      <div class="link-container">
-        <a href="" class="header-navigation">Posts</a>
-      </div>
-      <div class="link-container">
-        <a href="" class="header-navigation">Contact</a>
-      </div>
-      <div class="link-container">
-        <a href="" class="header-navigation">APOTD</a>
-      </div>
-    </header>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about_page.html">About</a>
+      <a href="post_list.html">Blog posts</a>
+      <a href="contact_page.html">Contact</a>
+      <a href="api_page.html">Api list</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <section class="second-headline-container">
       <div class="blog-text-container">
         <h2>It's about time, and space</h2>
@@ -44,7 +41,7 @@
       <button id="btn-next">Next</button>
     </div>
     <div class="sort-posts"></div>
-<!--     <section class="main-content">
+    <!--     <section class="main-content">
       <div class="featured-post-container">
         <div class="post-container">
           <div class="post-image"></div>

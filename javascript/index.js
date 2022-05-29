@@ -30,7 +30,7 @@ fetch(API_URL)
     console.log(apiResult);
     for (let i = 0; i < apiResult.length; i++) {
       if (i === 3) {
-        brake;
+        return;
       }
       const postTitle = apiResult[i].title.rendered;
       const postID = apiResult[i].id;
@@ -46,7 +46,14 @@ fetch(API_URL)
   })
   .catch((error) => console.log(error));
 
-
+function myFunction() {
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'topnav';
+  }
+}
 /* const otherApiCall = `https://mwakie.flywheelsites.com/wp-json/wp/v2/posts/?_embed`;
 const postDisplay = document.querySelector(".sidebar-container");
 async function displayOtherPosts() {
