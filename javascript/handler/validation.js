@@ -46,8 +46,7 @@ const validateInputs = () => {
         invalidateElement(nameInput);
         isFormValid = false;
     }
-    if (!isEmailValid(emailInput.value)) {
-      console.log("hg")
+    if (!isEmailValid(emailInput)) {
         invalidateElement(emailInput);
         isFormValid = false;
     }
@@ -61,7 +60,7 @@ const validateInputs = () => {
     }
 };
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('sumbit', (e) => {
     e.preventDefault();
     isValidOn = true;
     validateInputs();

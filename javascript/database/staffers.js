@@ -1,4 +1,4 @@
-const staff = [
+/* const staff = [
     {
         name: 'John Astro',
         occupation: 'Content creator',
@@ -33,4 +33,4 @@ function staffPicker() {
         crew.append(staffList);
     }
 }
-staffPicker();
+staffPicker(); */
