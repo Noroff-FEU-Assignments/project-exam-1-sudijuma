@@ -6,6 +6,7 @@ p {
   max-width: 650px;
   margin: auto;
   margin-bottom: 25px;
+  padding:24px;
 }
 
 html {
@@ -146,9 +147,14 @@ h1 {
   margin: 0 auto;
   max-width: 1080px;
 }
-
+@media screen and (max-width: 800px) {
+  .wp-block-image {
+    display:none;
+  }
+}
 .wp-block-image {
   object-fit: contain;
+  width: 100%;
 }
 
 .specific-post {
@@ -159,7 +165,7 @@ h1 {
   overflow: hidden;
 }
 
-.specific-post > p {
+.specific-post>p {
   line-height: 1.5rem;
   margin-top: 24px;
 }
@@ -190,17 +196,6 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-
-/* .recomended-posts {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 250px;
-  height: 250px;
-  border: 2px solid black;
-  background-image: url(/uploads/astro_inspace.jpg);
-  background-size: cover;
-} */
 
 .recomended-headline {
   background-color: white;

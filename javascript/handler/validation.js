@@ -47,6 +47,7 @@ const validateInputs = () => {
         isFormValid = false;
     }
     if (!isEmailValid(emailInput.value)) {
+      console.log("hg")
         invalidateElement(emailInput);
         isFormValid = false;
     }

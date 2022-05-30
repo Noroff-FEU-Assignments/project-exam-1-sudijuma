@@ -77,3 +77,9 @@ body {
     /*   background-image: url(/uploads/images/background/full-bloom.png);
     background-size: 10%; */
 }
+
+.under{
+    margin: 250px auto;
+    width: fit-content;
+    height:fit-content;
+}

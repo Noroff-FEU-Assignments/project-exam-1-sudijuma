@@ -62,7 +62,7 @@ html {
 }
 
 .topnav a.active {
-  background-color: #fb8b24;
+  background-color: teal;
   color: white;
 }
 
@@ -151,13 +151,32 @@ h3 {
     flex-wrap: wrap;
     overflow: hidden;
   }
+
   .blog-posts {
-    flex-basis: 50%;
     border-bottom: 2px solid black;
     border-radius: 5px;
     margin: 0 auto;
     margin-bottom: 24px;
     background-color: white;
+    width: 400px;
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .blog-post-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .blog-posts {
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    background-color: white;
+    width: 250px;
   }
 }
 
@@ -190,104 +209,105 @@ h3 {
 }
 
 @media screen and (max-width: 1000px) {
-    .blog-post-image-container {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-bottom: 2px solid hotpink;
-    }
+  .blog-post-image-container {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid hotpink;
   }
+}
 
-    .blog-image {
-      border: 1px solid black;
-      width: 100%;
-      object-fit: cover;
-    }
+.blog-image {
+  border: 1px solid black;
+  width: 100%;
+  object-fit: cover;
+}
 
-    .blog-info-container {
-      padding: 24px;
-    }
+.blog-info-container {
+  padding: 24px;
+}
 
-    .read-more-link {
-      text-decoration: none;
-      color: white;
-    }
+.read-more-link {
+  text-decoration: none;
+  color: white;
+}
 
-    .read-more-container {
-      display: flex;
-      width: fit-content;
-      height: fit-content;
-      background-color: black;
-      border-right: 1px solid hotpink;
-      border-bottom: 2px solid hotpink;
-      padding: 8px;
-      border-radius: 5px;
-    }
+.read-more-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  border-right: 1px solid hotpink;
+  border-bottom: 2px solid hotpink;
+  padding: 8px;
+  border-radius: 5px;
+}
 
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-    }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
 
-    .main-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-image: url(/uploads/images/background/5-dots.png);
-      background-size: 30%;
-      margin-top: 15px;
-      gap: 1.5rem;
-    }
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(/uploads/images/background/5-dots.png);
+  background-size: 30%;
+  margin-top: 15px;
+  gap: 1.5rem;
+}
 
-    .featured-post-container {
-      width: fit-content;
-      border: 2px solid lightgray;
-    }
+.featured-post-container {
+  width: fit-content;
+  border: 2px solid lightgray;
+}
 
-    .post-container {
-      width: 250px;
-      height: 300px;
-      margin: 24px;
-      border: 1px solid white;
-    }
+.post-container {
+  width: 250px;
+  height: 300px;
+  margin: 24px;
+  border: 1px solid white;
+}
 
-    .footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 5vh;
-      background-color: white;
-    }
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vh;
+  background-color: white;
+}
 
-    .footer-links>a {
-      text-decoration: none;
-    }
+.footer-links>a {
+  text-decoration: none;
+}
 
-    .navigation-column-container {
-      display: grid;
-      grid-template-columns: repeat(3, 200px);
-    }
+.navigation-column-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    .newletter-container {
-      display: flex;
-      border: 2px solid black;
-    }
+.newletter-container {
+  display: flex;
+  border: 2px solid black;
+}
 
-    .newsletter-form {
-      width: 250px;
-    }
+.newsletter-form {
+  width: 250px;
+}
 
-    .social-media {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: fit-content;
-      height: fit-content;
-      border: 1px solid black;
-    }
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  margin: 24px;
+}
 
-    .iconify {
-      font-size: 2rem;
-    }
+.iconify {
+  font-size: 2rem;
+}
