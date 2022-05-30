@@ -5,8 +5,8 @@
 p {
   max-width: 650px;
   margin: auto;
-  margin-bottom: 25px;
-  padding:24px;
+  margin-bottom: 12px;
+  padding:16px;
 }
 
 html {
@@ -84,9 +84,7 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: white;
-  /*   background-image: url(/uploads/images/background/full-bloom.png);
-  background-size: 10%; */
+  background-color: black;
 }
 
 .header {
@@ -143,9 +141,10 @@ h1 {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 64px auto;
   max-width: 1080px;
+  background-color: white;
 }
 @media screen and (max-width: 800px) {
   .wp-block-image {
@@ -214,11 +213,12 @@ h1 {
   justify-content: space-around;
   align-items: center;
   margin-top: 5vh;
+  background-color: white;
+  padding: 24px;
 }
 
 .navigation-column-container {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
+  display: flex;
 }
 
 .newletter-container {

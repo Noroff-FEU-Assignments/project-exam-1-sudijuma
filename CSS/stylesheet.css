@@ -73,9 +73,7 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: black;
-  /*   background-image: url(/uploads/images/background/full-bloom.png);
-  background-size: 10%; */
+  background-color:white;
 }
 
 .header {
@@ -118,7 +116,7 @@ a:hover {
 .headline-container {
   width: fit-content;
   height: fit-content;
-  background-color: black;
+  background-color: teal;
   padding: 8px;
   border-radius: 10px;
   color: white;
@@ -255,7 +253,7 @@ h3 {
   justify-content: center;
   background-image: url(/uploads/images/background/5-dots.png);
   background-size: 30%;
-  margin-top: 15px;
+  margin-top: 0 auto;
   gap: 1.5rem;
 }
 
