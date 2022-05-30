@@ -20,7 +20,6 @@ fetch(API_URL)
         for (let i = 0; i < apiResult.length; i++) {
             const postTitle = apiResult[i].title.rendered;
             const postID = apiResult[i].id;
-            const postDate = apiResult[i].date;
             const postImg = apiResult[i]._embedded["wp:featuredmedia"][0].source_url;
             blogDisplay.innerHTML += `
             <div class="post-box">

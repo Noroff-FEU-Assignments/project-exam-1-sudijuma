@@ -245,9 +245,12 @@ a:hover {
     margin-top: 5vh;
 }
 
+.footer-links>a {
+    text-decoration: none;
+}
+
 .navigation-column-container {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
+    display: flex;
 }
 
 .newletter-container {

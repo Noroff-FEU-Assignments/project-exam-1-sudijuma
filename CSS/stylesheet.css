@@ -143,9 +143,24 @@ h3 {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  margin-top: 64px;
-  /* justify-content: left; */
 }
+
+@media screen and (max-width: 1000px) {
+  .blog-post-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .blog-posts {
+    flex-basis: 50%;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    background-color: white;
+  }
+}
+
 
 .blog-post-text-container {
   font-size: 1.5rem;
@@ -161,6 +176,7 @@ h3 {
   background-color: white;
 }
 
+
 .blog-post-headline {
   max-width: 350px;
   height: fit-content;
@@ -173,91 +189,105 @@ h3 {
   border-bottom: 2px solid hotpink;
 }
 
-.blog-image {
-  border: 1px solid black;
-  width: 100%;
-  object-fit: cover;
-}
+@media screen and (max-width: 1000px) {
+    .blog-post-image-container {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 2px solid hotpink;
+    }
+  }
 
-.blog-info-container {
-  padding: 24px;
-}
+    .blog-image {
+      border: 1px solid black;
+      width: 100%;
+      object-fit: cover;
+    }
 
-.read-more-link {
-  text-decoration: none;
-  color: white;
-}
+    .blog-info-container {
+      padding: 24px;
+    }
 
-.read-more-container {
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-  background-color: black;
-  border-right: 1px solid hotpink;
-  border-bottom: 2px solid hotpink;
-  padding: 8px;
-  border-radius: 5px;
-}
+    .read-more-link {
+      text-decoration: none;
+      color: white;
+    }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 5vh;
-}
+    .read-more-container {
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+      background-color: black;
+      border-right: 1px solid hotpink;
+      border-bottom: 2px solid hotpink;
+      padding: 8px;
+      border-radius: 5px;
+    }
 
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-image: url(/uploads/images/background/5-dots.png);
-  background-size: 30%;
-  margin-top: 150px;
-  gap: 1.5rem;
-}
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+    }
 
-.featured-post-container {
-  width: fit-content;
-  border: 2px solid lightgray;
-}
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-image: url(/uploads/images/background/5-dots.png);
+      background-size: 30%;
+      margin-top: 15px;
+      gap: 1.5rem;
+    }
 
-.post-container {
-  width: 250px;
-  height: 300px;
-  margin: 24px;
-  border: 1px solid white;
-}
+    .featured-post-container {
+      width: fit-content;
+      border: 2px solid lightgray;
+    }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5vh;
-}
+    .post-container {
+      width: 250px;
+      height: 300px;
+      margin: 24px;
+      border: 1px solid white;
+    }
 
-.navigation-column-container {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-}
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5vh;
+      background-color: white;
+    }
 
-.newletter-container {
-  display: flex;
-  border: 2px solid black;
-}
+    .footer-links>a {
+      text-decoration: none;
+    }
 
-.newsletter-form {
-  width: 250px;
-}
+    .navigation-column-container {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+    }
 
-.social-media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: fit-content;
-  height: fit-content;
-  border: 1px solid black;
-}
+    .newletter-container {
+      display: flex;
+      border: 2px solid black;
+    }
 
-.iconify {
-  font-size: 2rem;
-}
+    .newsletter-form {
+      width: 250px;
+    }
+
+    .social-media {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: fit-content;
+      height: fit-content;
+      border: 1px solid black;
+    }
+
+    .iconify {
+      font-size: 2rem;
+    }

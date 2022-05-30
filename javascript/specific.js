@@ -13,9 +13,7 @@ async function displayPosts() {
     postContainer.innerHTML = `
         <h1>${postsResult.title.rendered}</h1>
         ${postsResult.content.rendered}
-        <span class="post-date">Posted: ${postsResult.date}</span>
-        <button id="btn-prev">Previous</button>
-        <button id="btn-next">Next</button>`;
+        <span class="post-date">Posted: ${postsResult.date}</span>`;
   } catch (err) {
     console.log(err)
   }
