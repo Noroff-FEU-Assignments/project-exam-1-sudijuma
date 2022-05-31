@@ -17,10 +17,10 @@ const messageInput = document.getElementById('message');
 let isFormValid = false;
 let isValidOn = false;
 
-const isEmailValid = (email) => {
+/* const isEmailValid = (email) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
-}
+} */
 const resetInput = (element) => {
     element.classList.remove("invalid");
     element.nextElementSibling.classList.add('hidden')
@@ -46,7 +46,8 @@ const validateInputs = () => {
         invalidateElement(nameInput);
         isFormValid = false;
     }
-    if (!isEmailValid(emailInput)) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(emailInput.value)) {
         invalidateElement(emailInput);
         isFormValid = false;
     }
@@ -71,8 +72,9 @@ form.addEventListener('sumbit', (e) => {
 });
 
 
-inputs.forEach(input => {
+/* inputs.forEach(input => {
     input.addEventListener('input', () => {
         validateInputs();
     });
 });
+ */
