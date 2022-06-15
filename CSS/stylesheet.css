@@ -73,7 +73,7 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-color:white;
+  background-color: white;
 }
 
 .header {
@@ -196,7 +196,8 @@ h3 {
 
 .blog-post-headline {
   max-width: 350px;
-  height: fit-content;
+  height: 75px;
+  margin: 8px;
 }
 
 .blog-post-image-container {
@@ -222,7 +223,7 @@ h3 {
 }
 
 .blog-info-container {
-  padding: 24px;
+  padding: 4px;
 }
 
 .read-more-link {
