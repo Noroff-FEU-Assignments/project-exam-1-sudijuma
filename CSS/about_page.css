@@ -113,7 +113,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 350px;
     max-width: 1440px;
 }
 
@@ -149,7 +149,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     margin: 0 auto;
     height: 550px;
     max-width: 1200px;
