@@ -4,6 +4,7 @@
 
 html {
     font-family: verdana, sans-serif;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -74,12 +75,48 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: black;
-    /*   background-image: url(/uploads/images/background/full-bloom.png);
-    background-size: 10%; */
 }
 
-.under{
+.hero-banner {
+    height: 350px;
+    border: 1px solid white;
+}
+
+.hero-image-container{
+    width: 350px;
+    height: 350px;
+}
+
+.main-content {
+    margin-top: 64px;
+    display: flex;
+}
+
+.headline-container {
+    color: white;
+}
+
+.api-image-container {
+    justify-content: center;
+    width:650px;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.api-explanation-container {
+    width: fit-content;
+}
+
+.api-explanation {
+    color: white;
+}
+
+.under-construction {
+    color: red;
     margin: 250px auto;
     width: fit-content;
-    height:fit-content;
+    height: fit-content;
 }
