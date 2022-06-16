@@ -77,12 +77,17 @@ body {
     background-color: black;
 }
 
+
 .hero-banner {
     height: 350px;
+    width : 100%;
     border: 1px solid white;
+    background-image: url(/uploads/astro_inspace.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.hero-image-container{
+.hero-image-container {
     width: 350px;
     height: 350px;
 }
@@ -98,10 +103,10 @@ body {
 
 .api-image-container {
     justify-content: center;
-    width:650px;
+    width: 650px;
 }
 
-.img-responsive{
+.img-responsive {
     width: 100%;
     height: auto;
 }
