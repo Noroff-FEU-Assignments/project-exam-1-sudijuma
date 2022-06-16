@@ -20,3 +20,17 @@ async function displayApi() {
     }
 }
 displayApi();
+const marsAPI = document.querySelector('.mars-weather')
+const marsWeatherAPI = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=bQda8zxBMGQUcbPIvQRKVczRhCkq1bJJDy5Jiq6V';
+async function displayMarsWeatherAPI() {
+    try {
+        const apiCall = await fetch(marsWeatherAPI);
+        const apiMarsResponse = await apiCall.json();
+        console.log(apiMarsResponse);
+        marsAPI.innerHTML = `<img src="${apiMarsResponse.photos[0].img_src}" alt="" srcset=""><p>${apiMarsResponse.photos[0].camera.full_name}</p>
+        <img src="${apiMarsResponse.photos[1].img_src}" alt="" srcset="">`
+    } catch (err) {
+        console.log(err);
+    }
+}
+displayMarsWeatherAPI();
