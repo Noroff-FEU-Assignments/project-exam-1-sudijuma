@@ -33,4 +33,4 @@ async function displayMarsWeatherAPI() {
         console.log(err);
     }
 }
-displayMarsWeatherAPI();
+/* displayMarsWeatherAPI(); */
